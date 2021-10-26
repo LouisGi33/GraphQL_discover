@@ -76,12 +76,15 @@ let getInTitle = function (args) {
 };
 
 let addCourse = function ({ title, author, description, topic, url }) {
+    const newID = coursesData.length + 1;
+
     const course = {
-      title: title,
-      author: author,
-      description: description,
-      topic: topic,
-      url: url,
+        id: newID,
+        title: title,
+        author: author,
+        description: description,
+        topic: topic,
+        url: url,
     };
     return [...coursesData, course];
 };
