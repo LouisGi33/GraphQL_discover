@@ -69,7 +69,7 @@ let getCourses = function(args) {
 let getInTitle = function (args) {
     if (args.title) {
         let title = args.title;
-        return coursesData.filter((course) => course.title === title);
+        return coursesData.filter((course) => course.title.includes(title));
     } else {
         return coursesData;
     }
