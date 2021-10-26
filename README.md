@@ -2,7 +2,7 @@
 Petit test de GraphQL avec query et mutations
 
 
-## Requetes pour avoir la liste des courses contenant une certaine string dans leur titre et pouvoir en ajouter
+### Requetes QraphQL pour avoir la liste des courses contenant une certaine string dans leur titre et pouvoir en ajouter
 
  ```
  query getCoursesWitnInTitle($title: String!){
